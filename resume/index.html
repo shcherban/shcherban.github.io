@@ -18,5 +18,22 @@
             </td>
         </tr>
     </template>
+    <script>
+        const carrierTable = document.getElementById('carrier');
+        const recordTemplate = document.getElementById('jobrow').content;
+        const records = [
+        {date: "Aug 2021 - current time", title: "Software Developer", company: "Moscow Jewelry Factory", description: "..."},
+        {date: "May 2018 - Aug 2021", title: "Software Engeneer", company: "SMP Salyut", description: "..."}
+    ];
+
+    records.forEach(element => {
+        const newRow = recordTemplate.cloneNode(true);
+        newRow.querySelector('.date').textContent = element.date;
+        newRow.querySelector('.title').textContent = element.title;
+        newRow.querySelector('.company').textContent = element.company;
+        newRow.querySelector('.description').textContent = element.description;
+        carrierTable.appendChild(newRow);
+    });
+    </script>
 </body>
 </html>
