@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>K. Shcherban - Résumé</title>
 </head>
 <body>
     <h1>Résumé</h1>
+        <h2>Konstantin Shcherban</h2>
+        <h3>Software Developer (C#, JS, SQL)</h3>
+        <a href="mailto:kostya.shcherban@gmail.com">kostya.shcherban@gmail.com</a>
+    </p>
     <table id="carrier"></table>
     <template id="jobrow">
         <tr>
@@ -22,8 +27,30 @@
         const carrierTable = document.getElementById('carrier');
         const recordTemplate = document.getElementById('jobrow').content;
         const records = [
-        {date: "Aug 2021 - current time", title: "Software Developer", company: "Moscow Jewelry Factory", description: "..."},
-        {date: "May 2018 - Aug 2021", title: "Software Engeneer", company: "SMP Salyut", description: "..."}
+        {
+            date: "August 2021 — currently",
+            company: "Moscow Jewelry Factory",
+            title: "Programmer",
+            description: "Developed a POS solution for jewelry shop (C#, WPF, SQL), integrated tax-free functionality (C#, JavaScript), developed an application for interchanging with government control system for precious metals and precious stones market (С#, SQL)."
+        },
+        {
+            date: "May 2018 — august 2021",
+            company: "SPE Salyut JSС",
+            title: "Engineer/programmer",
+            description: "Development of web application for river information services (HTML, CSS/Sass, JavaScript, PHP, jQuery, Vue.js, Leaflet.js, Firebase, Gulp)."
+        },
+        {
+            date: "April 2017 — april 2018",
+            company: "Krylov State Research Centre",
+            title: "Engineer",
+            description: "Prototyping, design and development of desktop and mobile applications for maritime information systems. (Photoshop, Inkscape, C#, WPF)."
+        },
+        {
+            date: "December 2012 — march 2017",
+            company: "CSRI Kurs JSC",
+            title: "Software developer",
+            description: "Working on software components of information system for skippers on river transport (C#, WPF). Have developed simulator of vessel GPS-receiver for testing (C++)."
+        }
     ];
 
     records.forEach(element => {
